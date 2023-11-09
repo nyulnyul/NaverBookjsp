@@ -1,3 +1,4 @@
+package bookapi;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -29,6 +30,9 @@ public class NaverApi {
                 br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             } else {
                 br = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+                System.out.println("Response Code: " + responseCode);
+                System.out.println("Response Message: " + conn.getResponseMessage());
+
             }
 
             String inputLine;
