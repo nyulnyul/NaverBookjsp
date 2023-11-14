@@ -10,4 +10,12 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+<servlet>
+  <servlet-name>SearchBooks</servlet-name>
+  <servlet-class>bookapi.SearchBooks</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SearchBooks</servlet-name>
+    <url-pattern>/SearchBooks</url-pattern>
+</servlet-mapping>
 </web-app>
